@@ -1,0 +1,14 @@
+D:\Nitesh Share\DotNetCore\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.dll
+D:\Nitesh Share\DotNetCore\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.deps.json
+D:\Nitesh Share\DotNetCore\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.runtimeconfig.json
+D:\Nitesh Share\DotNetCore\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.runtimeconfig.dev.json
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.csproj.CoreCompileInputs.cache
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorAssemblyInfo.cache
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorAssemblyInfo.cs
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.AssemblyInfoInputs.cache
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.AssemblyInfo.cs
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.RazorTargetAssemblyInfo.cache
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.dll
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.pdb
+D:\Nitesh Share\DotNetCore\DatingApp.API\obj\Debug\netcoreapp2.2\DatingApp.API.csprojAssemblyReference.cache
+D:\Nitesh Share\DotNetCore\DatingApp.API\bin\Debug\netcoreapp2.2\DatingApp.API.pdb
