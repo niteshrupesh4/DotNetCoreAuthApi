@@ -34,7 +34,7 @@ namespace DatingApp.API.Controllers
             if (await _repo.UserExists(userForRegisterDto.Username))
                 return BadRequest("Username already exists");
 
-            var userToCreate = new Tbl_User
+            var userToCreate = new ExaltUser
             {
                 Username = userForRegisterDto.Username
             };
@@ -54,7 +54,7 @@ namespace DatingApp.API.Controllers
 
             var claims = new[]
             {
-                new Claim(ClaimTypes.NameIdentifier, userFormRepo.Id.ToString()),
+                new Claim(ClaimTypes.NameIdentifier, userFormRepo.UserId.ToString()),
                 new Claim(ClaimTypes.Name, userFormRepo.Username)
                 };
 

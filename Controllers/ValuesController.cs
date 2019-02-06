@@ -14,10 +14,8 @@ namespace DatingApp.API.Controllers
     public class ValuesController : ControllerBase
     {
         private DEMOContext db;
-        private ExaltPayDbContext _context;
-        public ValuesController(DEMOContext dbcontext, ExaltPayDbContext context)
+        public ValuesController(DEMOContext dbcontext)
         {
-            _context = context;
             db = dbcontext;
         }
     
