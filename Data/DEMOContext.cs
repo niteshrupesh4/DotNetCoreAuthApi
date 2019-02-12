@@ -20,6 +20,7 @@ namespace DatingApp.API.Models
         public virtual DbSet<Photo> Photo { get; set; }
         public virtual DbSet<TblUser> TblUser { get; set; }
         public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<Like> Likes { get; set; }
 
 
         // Unable to generate entity type for table 'dbo.T1'. Please see the warning messages.
@@ -72,7 +73,7 @@ namespace DatingApp.API.Models
 
                 entity.Property(e => e.LastActive)
                     .HasMaxLength(200)
-                    .IsUnicode(false);                
+                    .IsUnicode(false);
 
                 entity.Property(e => e.Username)
                     .HasMaxLength(200)
@@ -127,6 +128,21 @@ namespace DatingApp.API.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
             });
+
+            modelBuilder.Entity<Like>()
+                .HasKey(k => new { k.LikerId, k.LikeeId });
+
+            modelBuilder.Entity<Like>()
+                .HasOne(u => u.Likee)
+                .WithMany(u => u.Likers)
+                .HasForeignKey(u => u.LikeeId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<Like>()
+                .HasOne(u => u.Liker)
+                .WithMany(u => u.Likees)
+                .HasForeignKey(u => u.LikerId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
