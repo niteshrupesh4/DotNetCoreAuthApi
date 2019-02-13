@@ -21,6 +21,7 @@ namespace DatingApp.API.Models
         public virtual DbSet<TblUser> TblUser { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<Like> Likes { get; set; }
+        public  DbSet<Message> Messages { get; set; }
 
 
         // Unable to generate entity type for table 'dbo.T1'. Please see the warning messages.
@@ -142,6 +143,16 @@ namespace DatingApp.API.Models
                 .HasOne(u => u.Liker)
                 .WithMany(u => u.Likees)
                 .HasForeignKey(u => u.LikerId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<Message>()
+                .HasOne(u => u.Sender)
+                .WithMany(m => m.MessagesSent)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Message>()
+                .HasOne(u => u.Recipient)
+                .WithMany(m => m.MessagesReceived)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
